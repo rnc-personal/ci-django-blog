@@ -11,6 +11,7 @@ class PostAdmin(SummernoteModelAdmin):
     list_display = ('created_on', 'status')
     search_fields = ['title', 'content']
 
+
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('name', 'body', 'post', 'created_on', 'approved')
